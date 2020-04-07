@@ -1,0 +1,376 @@
+:root{
+    --color: #BA1111;;
+    --titulo: 33px;
+    --margenes: 60ppx;
+    --espacio: 10px;
+    --espacio-contenido: 45px;
+    --fondo: #f2f2f2;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-"open sans";
+    background: var(--fondo);
+}
+
+/*preloader*/
+.entrada{
+    overflow: hidden;
+  }
+  .centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lds-facebook {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    .lds-facebook div {
+      display: inline-block;
+      position: absolute;
+      left: 8px;
+      width: 16px;
+      background: #cef;
+      animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+    .lds-facebook div:nth-child(1) {
+      left: 8px;
+      animation-delay: -0.24s;
+    }
+    .lds-facebook div:nth-child(2) {
+      left: 32px;
+      animation-delay: -0.12s;
+    }
+    .lds-facebook div:nth-child(3) {
+      left: 56px;
+      animation-delay: 0;
+    }
+    @keyframes lds-facebook {
+      0% {
+        top: 8px;
+        height: 64px;
+      }
+      50%, 100% {
+        top: 24px;
+        height: 32px;
+      }
+    }
+
+    /*header*/
+    .nav1{
+
+      width: 100%;
+      height: 100px;
+      background: var(--color);
+      position: fixed;
+    }
+    
+    .contenido{
+
+      height: 100%;
+      width: 95%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      
+        }
+    .contenido .Nombre{
+      width: 45%;
+      height: 30px;
+      margin-right: 20px;
+      
+    }
+    .Nombre>h3{
+      font-size: 25px;
+      color: #fff;
+    }
+    .imagen-perfil{
+      width: 60px;
+      height: 60px;
+    }
+    .imagen-perfil img{
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+    .almoadilla{
+      display: none;
+    }
+    .img1{
+      display: block;
+      animation: cambiar 3s infinite;
+    }
+    @keyframes cambiar{
+      0%{
+        display: none;
+      }
+      50%{
+        display: block;
+      }
+      100%{
+        display: none;
+      }
+    }
+    
+    
+    
+    
+    /* Principal*/
+    .principal{
+      
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    .columna{
+      
+      width: 20%;
+      background: #2c3e50;
+    }
+    .columna ul{
+     
+      width: 100%;
+      background: #39495e;
+      
+    }
+    li{
+      
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li:hover{
+      cursor: pointer;
+      border-bottom: 3px solid #1498a4;
+    transition: 0.6s;
+    }
+
+    /* Principal*/
+    .contedido-principal{
+      width: 80%;
+    }
+
+    /*centrado*/
+    .centrado1{
+      border: 1px solid black;
+      border: transparent;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+      overflow: hidden;
+      width: 100%;
+      display: none;
+      
+    }
+    
+    .carga{
+      margin: 120px auto;    
+      width: 100px;
+      height: 100px;
+      border: 8px solid #fff;
+      border-top-color: #73859c;
+      border-top-style: groove;
+      border-radius: 100%; 
+      animation: girar 0.5s linear infinite;
+    }
+
+    @keyframes girar{
+      from{transform: rotate(0deg);}
+      to{transform: rotate(360deg);}
+    }
+
+  
+    /*inicio*/
+    .inicio, .cursos, .horario{
+      border: 1px solid black;
+      border: transparent;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+      overflow: hidden;
+      width: 100%;
+    }
+    .bienbenido{
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    overflow: hidden;
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+    .contenedor, .materias{  
+      width: 100%;  
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    .cuadro-materia, .materia,.contenidos{
+     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .8);
+      width: 100%;
+      
+    }
+   .materia h4{
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+     flex-wrap: wrap;
+     margin-top: 20px;
+   }
+  .tabla{
+     margin: 10px auto;
+     
+   }  
+   .contenedor-tablas{
+    border: 2px solid #2c3e50;
+   }
+  
+   .tabla,td{
+     border: 1px solid #2c3e50;
+     border-collapse: collapse;
+     
+     text-align: center;
+     padding: 0 5px;
+   }
+
+   td{
+     height: 25px;
+   }
+   .tb{
+     background: #9a9ea1;
+   }
+   .tb1{
+    background: #456781;
+   }
+   .horario td{
+     width: 90px;
+     height: 40px;
+   }
+   .horario .tabla{
+     margin: 60px auto;
+   }
+   
+   /**/
+  
+
+    .perfil{
+      width: 30%;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    overflow: hidden;
+    }
+    .perfil img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .datos{
+      width: 70%; 
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    overflow: hidden;
+    }
+    .datos .titulo,  .texto{
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    .datos .cuadros{
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .3);
+      overflow: hidden;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+    .datos .cuadros:hover{
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+      overflow: hidden;
+    }
+    .cuadros .cont{
+   
+      width: 50%;
+      padding: 0 10px;
+    }
+    #cuadro-año{
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+    /*none*/
+    .cursos{
+      display: none;
+    }
+     .horario{
+       display: none;
+     }
+    /*cursos*/
+
+   
+    /*footer*/
+    .footer{
+      margin-top: 50px;
+      width: 100%;
+      height: 130px;
+      background: var(--color);
+      text-align: center;
+  }
+  .footer .icono{
+      
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      
+  }
+  .icono [class^="icon-"]{
+     
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      color: #333;
+      background: #fff;
+      border-radius: 50%;
+      margin: 20px 10px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; 
+  }
+  .icono [class]:hover{
+      color: blue;
+  }
+  .footer p{
+      margin-top: 10px;
+  }
+  .cuadros p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+  }
+    
